@@ -1,54 +1,39 @@
-# Frontend Mentor - Interactive rating component solution
+# Interactive Rating Component
 
-This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+My solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io).
 
-## Table of contents
+## Live Demo
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-- [Author](#author)
+https://code-surgeon-hossam.github.io/interactive-rating-component/
 
 ## Overview
 
-### The challenge
+A small feedback card where users pick a rating from 1 to 5 and submit it. After submitting, the card switches to a "Thank you" state that shows the selected rating.
 
-Users should be able to:
+### Features
 
-- View the optimal layout for the app depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Select and submit a number rating
-- See the "Thank you" card state after submitting a rating
+- Select a rating from 1 to 5
+- Submit the rating and see the "Thank you" state with the chosen number
+- Hover, selected and focus states for the rating buttons and the submit button
+- A rating is required before submitting
+- Responsive layout for mobile and desktop
+- Keyboard accessible: the radio inputs are hidden visually but still reachable with Tab and the arrow keys
 
-### Links
+## Built with
 
-- **Solution URL:** [Frontend Mentor Solution](https://www.frontendmentor.io/profile/Code-Surgeon-Hossam)
-- **Live Site URL:** [Live Demo on GitHub Pages](https://code-surgeon-hossam.github.io/Interactive-rating-component/)
+- Semantic HTML5 (`form`, `fieldset`, `legend`, radio inputs with labels)
+- CSS3 (Flexbox, custom fonts from Google Fonts, media queries)
+- Vanilla JavaScript
 
-## My process
+## What I learned
 
-### Built with
+- Using radio inputs with labels to build custom-styled rating buttons without losing keyboard support
+- Hiding an input visually with `opacity` and `position` instead of `display: none`, so it stays accessible
+- Why `box-sizing: border-box` makes sizing circles and padding easier
+- Switching between two states of a component with the `hidden` attribute and JavaScript
+- Measuring sizes and colors from the design images and checking my work against them
 
-- Semantic HTML5 markup (`<main>`, `<fieldset>`, `<label>`, radio `<input>`)
-- CSS3 custom properties & Flexbox
-- Mobile-first / Responsive workflow
-- Vanilla JavaScript (DOM manipulation & form validation)
-- Google Fonts - [Overpass](https://fonts.google.com/specimen/Overpass)
+## Author
 
-### What I learned
-
-Through this project, I reinforced several core frontend concepts:
-
-1. **Accessible Rating Inputs:** Instead of using plain `<div>` or `<button>` elements for the rating scale, I used semantic radio inputs wrapped inside a `<fieldset>` and paired with `<label>` tags. Linking `:checked + label` in CSS allowed clean visual selection states while preserving keyboard accessibility.
-2. **State Switching & Validation:** Handling form submission in Vanilla JavaScript to prevent empty submissions and dynamically inject the selected rating into the "Thank you" card state.
-
-```css
-/* Linking hidden radio inputs with their visual labels */
-.rating-state input:checked + label {
-  background-color: hsl(0, 100%, 100%);
-  color: hsl(216, 12%, 8%);
-}
+- GitHub: [@Code-Surgeon-Hossam](https://github.com/Code-Surgeon-Hossam)
+- Frontend Mentor: add your profile link here
