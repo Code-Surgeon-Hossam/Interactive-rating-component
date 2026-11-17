@@ -4,7 +4,7 @@ My solution to the [Interactive rating component challenge on Frontend Mentor](h
 
 ## Live Demo
 
-https://code-surgeon-hossam.github.io/interactive-rating-component/
+https://code-surgeon-hossam.github.io/Interactive-rating-component/
 
 ## Overview
 
